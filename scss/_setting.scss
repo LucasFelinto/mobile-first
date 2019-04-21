@@ -1,0 +1,15 @@
+$primary-font: 'Roboto', sans-serif;
+$rem-base: 17;
+
+
+// colors
+$primary-color: #FFF;
+
+
+
+
+// function and mixins
+@function rem-calc($value, $base: $rem-base) {
+  $result: $value / $base;
+  @return #{$result}rem;
+}
