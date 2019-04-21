@@ -4,9 +4,14 @@ $rem-base: 17;
 
 // colors
 $primary-color: #FFF;
+$menu-background: rgba(84, 78, 90, .9);
 
-
-
+// size
+$spacing-top: 7.389vh;
+$spacing-bottom: 2.71vh;
+$spacing-left: 9.6vw;
+$spacing-right: 9.6vw;
+$spacing-very-small: 6;
 
 // function and mixins
 @function rem-calc($value, $base: $rem-base) {

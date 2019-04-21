@@ -1,10 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
+}
+
+ul, ol, li {
+  list-style: none;
 }
 
 body {
@@ -20,10 +25,13 @@ body {
   height: 100%;
   box-sizing: border-box;
   font-weight: bold;
-  padding-top: 7.389vh;
-  padding-left: 9.6vw;
-  padding-right: 9.6vw;
-  padding-bottom: 2.71vh;
+  padding: 7.389vh 9.6vw 2.71vh 9.6vw;
+}
+
+.header-braven {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-braven > .title {
@@ -31,6 +39,56 @@ body {
   text-transform: uppercase;
   letter-spacing: 1.2rem;
   color: #FFF;
+}
+
+.menu-braven > .menu {
+  display: block;
+  height: 40px;
+  width: 22px;
+  background: url("../img/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+.menu-braven > .items {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(84, 78, 90, 0.9);
+  padding: 7.389vh 9.6vw 2.71vh 9.6vw;
+}
+.menu-braven > .items:before {
+  content: "X";
+  display: block;
+  font-size: 1.1764705882rem;
+  color: #FFF;
+  border: 4px solid #FFF;
+  border-radius: 50%;
+  width: 2.4705882353rem;
+  height: 2.4705882353rem;
+  line-height: 2.4705882353rem;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 2.3529411765rem;
+}
+
+.menu-braven .action {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.menu-braven .item {
+  margin-left: 0.3529411765rem;
+}
+.menu-braven .item:not(:last-child) {
+  margin-bottom: 2.3529411765rem;
 }
 
 /*# sourceMappingURL=main.css.map */

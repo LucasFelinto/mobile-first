@@ -6,8 +6,5 @@
   height: 100%;
   box-sizing: border-box;
   font-weight: bold;
-  padding-top: 7.389vh; 
-  padding-left: 9.6vw;
-  padding-right: 9.6vw;
-  padding-bottom: 2.71vh;
+  padding: $spacing-top $spacing-right $spacing-bottom $spacing-left; 
 }
